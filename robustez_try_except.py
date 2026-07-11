@@ -12,7 +12,7 @@ class Transaccion:
     def valor(self):
         return self._valor
 
-    @valor.setter
+    @valor.settergit
     def valor(self, nuevo_valor):
         """Valida y encapsula el valor de la transacción.
             Raises:
@@ -28,7 +28,7 @@ class Transaccion:
         return f"{self.cliente_id} | {self.tipo} | ${self.valor}"
 
 
-# 2) Lectura TOLERANTE A FALLOS: un try/except por cada linea
+
 def cargar_transacciones(nombre_archivo):
     """Lee transacciones desde un archivo manejando registros corruptos de forma tolerante.
        Args:
